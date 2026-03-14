@@ -1,0 +1,80 @@
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=GFS+Didot&family=Montserrat+Alternates:wght@400;500;600;700;800;900&family=Pacifico&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  :root{
+    --primary:#373737;
+    --secondary: #FFB840;
+  
+  }
+  @layer components {
+  .flex-c{
+    @apply flex justify-center items-center text-center
+  }
+  .abs-c{
+    @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute
+  }
+    .btn{
+      @apply  py-2 px-6  rounded-full font-semibold transition-all duration-300 ease-in-out leading-normal 
+    }
+    .btn-main{
+      @apply bg-primary hover:bg-secondary text-white
+
+    }
+    .btn-second{
+      @apply bg-white hover:bg-neutral-10 text-primary 
+
+    }
+    .btn-gr{
+      @apply apply-gr-btn text-white 
+    }
+    .min-h-dscreen{
+      @apply min-h-[100dvh]
+    }
+    .max-w-modal{
+      @apply w-screen md:max-w-2xl
+    }
+    .max-screen{
+      @apply px-4 xl:px-0 max-w-screen-lg xl:max-w-[1200px] 2xl:max-w-[1400px] 3xl:max-w-[1800px]  mx-auto
+    }
+    .td-300{
+      @apply transition-all duration-300 ease-in-out;
+    }
+    
+  }
+
+  body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'GFS Didot', serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Playball', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+      @apply text-neutral-2;
+      background-color: #F5F5F5;
+      
+    }
+
+  .roboto{
+    font-family: 'Roboto', sans-serif;
+  }
+  .didot{
+    font-family: 'GFS Didot', serif;
+  }
+  .montserrat{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  button:disabled{
+    cursor: not-allowed !important;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'GFS Didot', serif;
+  }
