@@ -7,7 +7,7 @@ const DownloadBoxes = () => {
     <div className="flex gap-4 flex-wrap justify-center ">
       <a
         role="button"
-        href="#appstore"
+        href="https://apps.apple.com/sg/app/spoused-match-meet-marry/id6504262903"
         className="flex items-center gap-2 py-2 px-4 bg-neutral-1 hover:bg-neutral-2  rounded-xl">
         <div className="flex-shrink-0">
           <Image src={apple} alt="apple" className="w-8 h-8" />
@@ -23,7 +23,7 @@ const DownloadBoxes = () => {
       </a>
       <a
         role="button"
-        href="#appstore"
+        href="https://play.google.com/store/apps/details?id=com.marriagespoused.myapp&hl=en-SG&utm_source=apac_med"
         className="flex items-center gap-2 py-2 px-4 bg-neutral-1 hover:bg-neutral-2 w-fit rounded-xl">
         <div className="flex-shrink-0">
           <Image src={google} alt="google" className="w-8 h-8" />
